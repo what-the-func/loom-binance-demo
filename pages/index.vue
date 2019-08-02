@@ -148,7 +148,7 @@ export default {
       const loomBNBTransferGatewayAddress =
         '0xf801deec09eddf70b81e054c2241ece5f49edac2'
       await this.loomBNBContract.methods
-        .approve(loomBNBTransferGatewayAddress, amountInt + fee)
+        .approve(loomBNBTransferGatewayAddress, amountInt)
         .send({ from: this.loomUserAddress })
       const delay = (ms) => {
         // eslint-disable-next-line no-new
